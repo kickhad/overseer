@@ -9,7 +9,8 @@ export enum MachineToolType {
 export enum MachineType {
     Unknown,
     Octoprint,
-    RepRapFirmware
+    RepRapFirmware,
+    CuraConnect
 }
 
 export interface MachineTool {
