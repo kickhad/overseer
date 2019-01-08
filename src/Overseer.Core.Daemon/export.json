@@ -1,0 +1,5 @@
+{
+    "_id": "ApplicationSettings",
+    "DefaultPort": 9000,
+    "DefaultInterval": 10000
+}

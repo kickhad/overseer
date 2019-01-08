@@ -15,6 +15,7 @@
 *.userprefs
 
 # Build results
+src/CodeGraphData
 bin/
 [Dd]ebug/
 [Dd]ebugPublic/
