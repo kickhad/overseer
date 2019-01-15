@@ -1,4 +1,3 @@
-@@ -1,38 +0,0 @@
 import { Component } from "@angular/core";
 import { FormControl, Validators } from "@angular/forms";
 import { BaseMachineComponent } from "./base-machine.component";
