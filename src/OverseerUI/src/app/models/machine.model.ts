@@ -7,10 +7,10 @@ export enum MachineToolType {
 }
 
 export enum MachineType {
+    UM,
     Unknown,
     Octoprint,
-    RepRapFirmware,
-    UM
+    RepRapFirmware
 }
 
 export interface MachineTool {
