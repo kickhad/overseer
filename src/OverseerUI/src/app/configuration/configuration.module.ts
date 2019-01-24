@@ -37,10 +37,10 @@ import { UsersComponent } from "./users/users.component";
         TranslateModule.forChild()
     ],
     entryComponents: [
+        UMMachineComponent,
         CertificateErrorDialogComponent,
         OctoprintMachineComponent,
-        RepRapFirmwareMachineComponent,
-        UMMachineComponent
+        RepRapFirmwareMachineComponent
     ],
     declarations: [
         ConfigurationComponent,

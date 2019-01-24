@@ -24,7 +24,7 @@ export const pollIntervals = [
 ];
 
 export const machineTypes = [
+    new DisplayOption("UM", MachineType.UM),
     new DisplayOption("Octoprint", MachineType.Octoprint),
-    new DisplayOption("RepRapFirmware", MachineType.RepRapFirmware),
-    new DisplayOption("UM", MachineType.UM)
+    new DisplayOption("RepRapFirmware", MachineType.RepRapFirmware)
 ];

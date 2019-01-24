@@ -9,10 +9,10 @@ namespace Overseer.Models
 {
 	public enum MachineType
 	{
+        UM,
 		Unknown,
 		Octoprint,
-		RepRapFirmware,
-        UM
+		RepRapFirmware
 	}
 
 	public abstract class Machine : IEntity

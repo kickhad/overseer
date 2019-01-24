@@ -30,9 +30,9 @@ export class MachineHostComponent implements OnInit, OnDestroy {
     private machineTypeSubscription: Subscription;
 
     private machineTypeComponentMap = new Map([
+        [MachineType.UM, UMMachineComponent],
         [MachineType.Octoprint, OctoprintMachineComponent],
-        [MachineType.RepRapFirmware, RepRapFirmwareMachineComponent],
-        [MachineType.UM, UMMachineComponent]
+        [MachineType.RepRapFirmware, RepRapFirmwareMachineComponent]
     ]);
 
     ngOnInit() {
