@@ -19,6 +19,7 @@ import { MachineHostComponent } from "./machines/shared/machine-host.component";
 import { MachineHostDirective } from "./machines/shared/machine-host.directive";
 import { OctoprintMachineComponent } from "./machines/shared/octoprint-machine.component";
 import { RepRapFirmwareMachineComponent } from "./machines/shared/reprapfirmware-machine.component";
+import { UMMachineComponent } from "./machines/shared/um-machine.component";
 import { SetupComponent } from "./setup/setup.component";
 import { AddUserComponent } from "./users/add-user.component";
 import { CreateUserComponent } from "./users/create-user.component";
@@ -38,7 +39,8 @@ import { UsersComponent } from "./users/users.component";
     entryComponents: [
         CertificateErrorDialogComponent,
         OctoprintMachineComponent,
-        RepRapFirmwareMachineComponent
+        RepRapFirmwareMachineComponent,
+        UMMachineComponent
     ],
     declarations: [
         ConfigurationComponent,
@@ -56,6 +58,7 @@ import { UsersComponent } from "./users/users.component";
         MachineHostDirective,
         OctoprintMachineComponent,
         RepRapFirmwareMachineComponent,
+        UMMachineComponent,
         CreateUserComponent,
         CreateMachineComponent,
         ThemeSelectorComponent,

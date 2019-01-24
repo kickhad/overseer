@@ -4,6 +4,7 @@ import { MachineProvider } from "./machine.provider";
 import { OctoprintMachineProvider } from "./octoprint-machine.provider";
 import { HttpClient } from "@angular/common/http";
 import { RepRapFirmwareMachineProvider } from "./reprapfirmware-machine.provider";
+import { UMMachineProvider } from "./um-machine.provider";
 
 @Injectable({
     providedIn: "root"
@@ -23,6 +24,9 @@ export class MachineProviderService {
                     break;
                 case MachineType.RepRapFirmware:
                     provider = new RepRapFirmwareMachineProvider(machine, this.http);
+                    break;
+                case MachineType.UM:
+                    provider = new UMMachineProvider(machine, this.http);
                     break;
                 default:
                     throw new Error("invalid_machine_type");

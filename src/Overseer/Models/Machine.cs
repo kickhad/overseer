@@ -11,7 +11,8 @@ namespace Overseer.Models
 	{
 		Unknown,
 		Octoprint,
-		RepRapFirmware
+		RepRapFirmware,
+        UM
 	}
 
 	public abstract class Machine : IEntity
@@ -104,4 +105,20 @@ namespace Overseer.Models
 		[JsonIgnore]
 		public Dictionary<string, string> Headers => new Dictionary<string, string>();
 	}
+
+    public class UMMachine : Machine, IRestMachine
+    {
+        public override MachineType MachineType => MachineType.UM;
+
+        public bool RequiresPassword { get; set; }
+
+        public string Password { get; set; }
+
+        public string Url { get; set; }
+
+        public string ClientCertificate { get; set; }
+
+        [JsonIgnore]
+        public Dictionary<string, string> Headers => new Dictionary<string, string>();
+    }
 }
