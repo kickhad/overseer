@@ -3,7 +3,6 @@ import { FormGroup } from "@angular/forms";
 import { Subscription } from "rxjs";
 import { OctoprintMachineComponent } from "./octoprint-machine.component";
 import { RepRapFirmwareMachineComponent } from "./reprapfirmware-machine.component";
-import { UMMachineComponent } from "./um-machine.component";
 import { BaseMachineComponent } from "./base-machine.component";
 import { MachineHostDirective } from "./machine-host.directive";
 import { MachineType } from "../../../models/machine.model";
@@ -30,7 +29,6 @@ export class MachineHostComponent implements OnInit, OnDestroy {
     private machineTypeSubscription: Subscription;
 
     private machineTypeComponentMap = new Map([
-        [MachineType.UM, UMMachineComponent],
         [MachineType.Octoprint, OctoprintMachineComponent],
         [MachineType.RepRapFirmware, RepRapFirmwareMachineComponent]
     ]);

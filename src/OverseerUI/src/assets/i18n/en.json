@@ -59,7 +59,6 @@
     "Operational": "Operational",
     "Paused": "Paused",
     "Octoprint": "Octoprint",
-    "UM" : "Ultimaker 3 / S5 (EXPERIMENTAL)",
     "RepRapFirmware": "RepRap Firmware (Duet Web Control)",
     "requiresAuthenticationTitle": "When enabled anonymous access to the application is not allowed.",
     "requiresAuthentication": "Require User Logins",

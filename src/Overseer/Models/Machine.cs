@@ -9,7 +9,6 @@ namespace Overseer.Models
 {
 	public enum MachineType
 	{
-        UM,
 		Unknown,
 		Octoprint,
 		RepRapFirmware
@@ -105,20 +104,4 @@ namespace Overseer.Models
 		[JsonIgnore]
 		public Dictionary<string, string> Headers => new Dictionary<string, string>();
 	}
-
-    public class UMMachine : Machine, IRestMachine
-    {
-        public override MachineType MachineType => MachineType.UM;
-
-        public bool RequiresPassword { get; set; }
-
-        public string Password { get; set; }
-
-        public string Url { get; set; }
-
-        public string ClientCertificate { get; set; }
-
-        [JsonIgnore]
-        public Dictionary<string, string> Headers => new Dictionary<string, string>();
-    }
 }
